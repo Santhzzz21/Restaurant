@@ -1,0 +1,115 @@
+/* Reset some default browser styles */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Apply a universal font and set background for the body */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Apply styling to the root element */
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height of the viewport */
+  padding: 20px;
+  background-color: #f7f7f7;
+}
+
+/* Basic styling for buttons */
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+/* Define hover effects for all buttons globally */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Add some default link styling */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2 {
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  color: #444;
+}
+
+/* Add some basic global padding to all elements */
+.container {
+  width: 100%;
+  padding: 0 15px;
+}
+
+/* Style for form inputs */
+input[type="text"],
+input[type="tel"],
+input[type="number"],
+button {
+  font-size: 16px;
+  border-radius: 8px;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 500px;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+button:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Utility for centering content horizontally and vertically */
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-content-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsive container for mobile and tablet views */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  input[type="text"],
+  input[type="tel"],
+  input[type="number"],
+  button {
+    max-width: 100%;
+  }
+}
